@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import Image from 'next/image'
 
 import { socialLinks } from '../constants/socialLinks'
 
@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
         </article>
         <div className='w-2/3 md:w-1/3 mx-auto p-4'>
-          <Image
+          <img
             src='/avatar.jpg'
             alt='avatar'
             className='rounded-full'

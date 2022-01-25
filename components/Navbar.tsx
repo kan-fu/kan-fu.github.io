@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import { FaSun, FaMoon, FaAlignJustify, FaWindowClose } from 'react-icons/fa'
 import { useTheme } from 'next-themes'
-import Image from 'next/image'
 import { Link } from 'react-scroll'
 
 export default function Nav() {
@@ -26,7 +26,7 @@ export default function Nav() {
                       smooth={true}
                       duration={500}
                       className='cursor-pointer hover:opacity-70'>
-              <Image
+              <img
                 className='h-8 w-8'
                 width={32}
                 height={32}

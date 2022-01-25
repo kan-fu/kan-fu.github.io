@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import Image from 'next/image'
 import projects from '../constants/projects'
 
 const Projects = () => {
@@ -22,7 +22,7 @@ interface Icon {
 
 interface ProjectProps {
   name: string
-  link: string
+  link: any
   description: string
   keywords: string[]
   icons: Icon[]
@@ -40,7 +40,7 @@ const Project = ({ project }: { project: ProjectProps }) => {
           target='_blank'
           rel='noreferrer'
         >
-          <Image
+          <img
             src={link}
             alt={name}
             width={960}
