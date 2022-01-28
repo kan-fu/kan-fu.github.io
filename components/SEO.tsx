@@ -6,7 +6,7 @@ const SEO = () => {
     name: 'Kan Fu',
     title: 'Kan Fu - Portfolio',
     description: 'This is my personal website. Connect with me to know more.',
-    image: '/avatar.jpg',
+    image: '/thumbnail.jpg',
     type: 'website',
     link: 'https://kan-fu.github.io',
   }
@@ -21,6 +21,7 @@ const SEO = () => {
       <meta property='og:site_name' content={meta.name} />
       <meta property='og:description' content={meta.description} />
       <meta property='og:title' content={meta.title} />
+      <meta property='og:image' content={meta.image} />
     </Head>
   )
 }
