@@ -50,7 +50,7 @@ const Project = ({ project }: { project: ProjectProps }) => {
         </a>
       </div>
       {/* Card Content */}
-      <div className='bg-gray-200 dark:bg-gray-700 w-full max-w-[960px] lg:w-1/3 p-6 flex flex-col justify-between gap-2 lg:gap-4'>
+      <div className='bg-gray-200 dark:bg-gray-700 w-full max-w-[960px] lg:w-1/3 p-6 flex flex-col justify-between gap-2 lg:gap-4 z-10'>
         <h2 className='text-2xl font-bold'>{name}</h2>
         <p>{description}</p>
         {/* Tech stack */}
