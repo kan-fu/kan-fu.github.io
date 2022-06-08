@@ -3,10 +3,23 @@ import { ThemeProvider } from 'next-themes'
 import Layout from '../components/Layout'
 import type { AppProps } from 'next/app'
 import SEO from '../components/SEO'
+import Script from 'next/script'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute='class'>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        strategy='afterInteractive'
+      />
+      <Script id='google-analytics' strategy='afterInteractive'>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+        `}
+      </Script>
       <SEO />
       <Layout>
         <Component {...pageProps} />
