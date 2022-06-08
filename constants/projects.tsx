@@ -4,10 +4,45 @@ import { AiOutlineDatabase } from 'react-icons/ai'
 
 const projects = [
   {
+    name: 'Old City Memory',
+    link: '/old-city-memo.jpg',
+    description: 'A website for sharing old photos of the city lost in history.',
+    keywords: ['React', 'Tailwind CSS', 'Spring Boot', 'JWT', 'MongoDB', 'Next.js', 'Leaflet'],
+    icons: [
+      {
+        name: 'Github',
+        component: <FaGithub />,
+        link: 'https://github.com/kan-fu/old-city-memo',
+      },
+      {
+        name: 'External Link',
+        component: <FaShare />,
+        link: 'https://old-city-memo.vercel.app/',
+      },
+    ],
+  },
+  {
+    name: 'Stock Portfolio Dashboard',
+    link: '/rps.png',
+    description: 'A personal stock dashboard for tracking my quantitative investment strategies.',
+    keywords: ['React', 'Recharts', 'Express', 'Graphql', 'MongoDB', 'Gatsby'],
+    icons: [
+      {
+        name: 'Github',
+        component: <FaGithub />,
+        link: 'https://github.com/kan-fu/rps-portfolio-dashboard',
+      },
+      {
+        name: 'External Link',
+        component: <FaShare />,
+        link: 'https://rps-portfolio.netlify.app/',
+      },
+    ],
+  },
+  {
     name: '24 Game',
     link: '/24.png',
-    description:
-      'A web application that allows users to solve 24 game. Solutions are calculated by brute force algorithm with the time complexity of O(n! * 4**(n-1) * 2**(n-2)) given that the number of operands is n.',
+    description: 'A web application that allows users to solve 24 game.',
     keywords: ['React', 'Material UI'],
     icons: [
       {
@@ -41,36 +76,12 @@ const projects = [
       },
     ],
   },
-  {
-    name: 'Stock Portfolio Dashboard',
-    link: '/rps.png',
-    description:
-      'A personal stock dashboard for tracking my quantitative investment strategies.',
-    keywords: ['React', 'Recharts', 'Express', 'Graphql', 'MongoDB', 'Gatsby'],
-    icons: [
-      {
-        name: 'Github',
-        component: <FaGithub />,
-        link: 'https://github.com/kan-fu/rps-portfolio-dashboard',
-      },
-      {
-        name: 'External Link',
-        component: <FaShare />,
-        link: 'https://rps-portfolio.netlify.app/',
-      },
-    ],
-  },
+
   {
     name: 'Freecodecamp Projects',
     link: '/freecodecamp.png',
     description: 'Projects that help me get these certificates.',
-    keywords: [
-      'Repsonsive Design',
-      'JS Algorithms',
-      'Front End',
-      'Back End',
-      'Full Stack Open',
-    ],
+    keywords: ['Repsonsive Design', 'JS Algorithms', 'Front End', 'Back End', 'Full Stack Open'],
     icons: [
       {
         name: 'Responsive Design',

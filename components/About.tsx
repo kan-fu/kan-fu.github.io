@@ -20,7 +20,7 @@ const About = () => {
             python scripts to solve everyday problems.
           </p>
           <p className='text-xl px-4 md:px-8 leading-loose'>
-            Now I am a self-taught react.js developer with focus on MERN stack.
+            Now I am a self-taught full stack developer.
             I am passionate about learning new things and improving my skills.
           </p>
           <p className='text-xl px-4 md:px-8 leading-loose'>
